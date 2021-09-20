@@ -9,6 +9,7 @@
 	  flex-direction: column;
 	  font-family: sofia-pro, sans-serif;
 	  text-align: center;
+	  
 	}
 	h1 {
 	  font-family: gothic-open-shaded, sans-serif;

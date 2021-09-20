@@ -5,8 +5,8 @@ html, body {
 }
 
 body {
-	color: #fff;
-	background: black;
+	color: black;
+	background: white;
 	margin: 0;
 	padding: 8px;
 	box-sizing: border-box;
@@ -28,6 +28,7 @@ a:visited {
 
 label {
 	display: block;
+	color: black;
 }
 
 input, button, select, textarea {

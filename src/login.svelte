@@ -21,6 +21,8 @@
         form{
             --text-color: #afafaf;
             max-width: 500px;
+            background-color: white;
+            color: black;
         }
         .field {
             width: 100%;
@@ -30,8 +32,12 @@
         }
     
         .label{
-            color: var(--text-color);
+            color: black;
             font-size: 1.2rem;
+            
+        }
+        #stubborn{
+            z-index: 1;
         }
     
         .input {
@@ -144,10 +150,11 @@
             </div>
             <div class="field">
                 <input type={showPassword ? 'text' : 'password'} class="input" on:input={validatePassword}/>
-                <label for="password" class="label">Password</label>
+                <label for="password" class="label" id="stubborn">Password</label>
                 <span class="toggle-password"
                 on:mouseenter="{() => (showPassword = true)}"
-                on:mouseleave="{() => (showPassword = false)}">
+                on:mouseleave="{() => (showPassword = false)}"
+                on:click="{()=> (showPassword = true)}">
                     {showPassword ?  '🙈':'👁'}
                 </span>
             </div>
